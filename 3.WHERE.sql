@@ -85,7 +85,7 @@ WHERE first_name LIKE 'a___%';
 
 SELECT *
 FROM employee_demographics
-WHERE first_name LIKE '1989%';
+WHERE birth_date LIKE '1989%';
 
 
 

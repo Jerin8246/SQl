@@ -8,13 +8,15 @@ GROUP BY  gender;
 SELECT gender, AVG(age)
 FROM employee_demographics
 group by gender
-HAVING AVG(age) >  40;
+HAVING AVG(age) > 40;
 
 SELECT OCCUPATION, AVG(salary)
 FROM employee_salary
 GROUP BY  occupation;
 
 # Where is used before GROUPBY and HAVING is used after GROUPBY
+# Where cannot be used with aggregated functions
+# Having is used with aggrgate functions
 
 SELECT occupation, AVG(salary)
 FROM employee_salary
